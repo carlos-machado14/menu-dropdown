@@ -1,0 +1,52 @@
+body {
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  width: 600px;
+  margin: 0 auto;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav ul li {
+  float: left;
+  position: relative;
+}
+/* Menu horizontal principals */
+nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: darkgray;
+  background: #fff;
+  padding: 5px 10px;
+  border: 1px solid darkgray;
+  margin-right: -5px;
+  width: 100px;
+}
+/* Submenu */
+nav ul li ul {
+  display: none;
+  position: absolute;
+  padding: 5px;
+}
+/* Itens do sub menus */
+nav ul li ul li a {
+  width: 110px;
+  margin-top: -1px;
+}
+nav ul li ul li a:hover {
+  background-color: #ddd;
+}
+/* faz aparecer o menu */
+nav li:hover ul {
+  display: block;
+}
+/* Altera a cor do background dos itens do menu */
+nav ul li a:hover {
+  background-color: #ddd;
+}
